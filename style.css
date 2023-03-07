@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240,239,243);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    background-color:whitesmoke;
+
+}
+
+.container{
+    margin-top: 15px;
+    width: 375px;
+    height:590px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: scroll;
+    box-shadow: 4px 4px 30px rgb(0,0,0,0.06);    
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.container form{
+    width: 100%;
+    border:1px solid rgb(82,74,235);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+}
+.container form input{
+    border: none;
+    outline: none;
+    box-shadow: 2px solid black;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom:15PX ;
+}
+
+.product img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.p-details{
+    padding-left: 30px;
+
+}
+.product-list{
+    padding: 30px 0;
+}
+
+.product p-details{
+    font-size: 18px;
+    color: #1d1d1d;
+}
