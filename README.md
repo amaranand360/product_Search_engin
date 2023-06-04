@@ -18,8 +18,8 @@ You can see a live demo of the search engine : https://daa-mini-project-by-amar.
 
 To run the search engine locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
-2. Open the project directory: `cd your-repository`
+1. Clone the repository: `https://github.com/amaranand360/product_Search_engin.git`
+2. Open the project directory: `cd search_engin`
 3. Open the `index.html` file in a web browser.
 
 ## 💡 Usage
@@ -33,16 +33,20 @@ To run the search engine locally, follow these steps:
 - HTML
 - CSS
 - JavaScript
+- Search-algorithm
 
-## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
 
 ## 🤝 Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
+#📬 Contact
+
+   If you have any questions or comments, please feel free to contact me at: amar.anand0030@gmail.com.
+
+
 ## 🙏 Acknowledgments
 
-- The design and idea for this search engine were inspired by [example.com](https://www.example.com).
+- The design and idea for this search engine were inspired by myself.
 
