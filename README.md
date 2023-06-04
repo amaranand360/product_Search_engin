@@ -41,7 +41,7 @@ To run the search engine locally, follow these steps:
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
-#📬 Contact
+## 📬 Contact
 
    If you have any questions or comments, please feel free to contact me at: amar.anand0030@gmail.com.
 
