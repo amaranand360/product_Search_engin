@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search engine</title>
+    <title>Product Search engine</title>
     <link rel = "stylesheet" href="style.css">
     <script src="script.js" defer></script>
    
 </head>
 <body>
+    <p style=" margin-top: 10px; color: lightcoral ;">  Design & Analysis of algorithms mini project    </p>
     <section class="container">
+        <div class="constant">
         <form>
             <i class="fas fa-search"></i>
-            <input type="text" name="search" id="search-item" placeholder="Search product"
-                onkeyup = "searchfun()">
-        </form>
+        
+                <input type="text" name="search" id="search-item" placeholder="Search Your product here" onkeyup="searchfun()">
+        
+            </form>
+            <input style="margin-top: 10px;" type="radio" id="html" name="Price" value="Pricefilter">
+            <label for="html">Apply Price filter</label><br>
+            <div class="result">
+            <input type="number" name="min-price" id="min-price" placeholder="Min Price" onkeyup="searchfun()">
+            <input type="number" name="max-price" id="max-price" placeholder="Max Price" onkeyup="searchfun()">
+            </div>
+        </div>
+            
+        <div class="scrolling">
         <div class="product-list" id="product-list">
 
             <div class="product">
                 <img src="img/gt1.jpeg" alt="error">
                 <div class="p-details"> 
-                    <h3>Green Tshirt for Everyone</h3>
-                    <h3>RS.329</h3>
+                    <h3>Green Tshirt for Man's</h3>
+                    <h3>RS.429</h3>
                 </div>
             </div>
 
@@ -62,7 +74,7 @@
                 <img src="img/rt2.jpeg" alt="error">
                 <div class="p-details"> 
                     <h3> Red Tshirt for Everyone</h3>
-                    <h3>RS.399</h3>
+                    <h3>RS.699</h3>
                 </div>
             </div>
 
@@ -94,7 +106,7 @@
                 <img src="img/pt3.jpeg" alt="error">
                 <div class="p-details"> 
                     <h3>plain Purple Tshirt </h3>
-                    <h3>RS.429</h3>
+                    <h3>RS.509</h3>
                 </div>
             </div>
 
@@ -158,11 +170,25 @@
                 <img src="img/t4.jpeg" alt="error">
                 <div class="p-details"> 
                     <h3>Roblox Black Logo Tshirt</h3>
-                    <h3>RS.869</h3>
+                    <h3>RS.1869</h3>
                 </div>
             </div>
-
         </div>
+    </div>
+
     </section>
+
+    <footer>
+        <div class="intro">
+            <p>Created by| AMAR KUMAR | ENG21CS0030</p>
+            <a href="https://www.facebook.com/profile.php?id=100065646790454" > <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/amaranand_371/"> <i class="fa-brands fa-instagram"></i> </a>
+            <a href="https://twitter.com/AmarEngcs0030"><i class="fa-brands fa-twitter"></i> </a> 
+            <a href="https://github.com/amaranand360"><i class="fa-brands fa-github"></i> </a> 
+            <a href="#"><i class="fa-solid fa-link"></i> </a> 
+            <p>@Anandraj All rights reserved 2023</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/6dfb65630f.js" crossorigin="anonymous"></script>
 </body>
 </html>

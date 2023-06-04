@@ -1,23 +1,28 @@
-const searchfun = () =>{
-const searchbox = document.getElementById("search-item").ariaValueMax.toUpperCase();
-const storeitems = document.getElementById("product-list")
-const product = document.querySelectorAll(".product")
-const pname = storeitems.getElementsByTagName("h3")
+  
+function searchfun() {
+  var searchInput = document.getElementById("search-item").value.toLowerCase();
+  var minPriceInput = parseFloat(document.getElementById("min-price").value);
+  var maxPriceInput = parseFloat(document.getElementById("max-price").value);
+  var products = document.getElementsByClassName("product");
 
-for(let i=0;i<pname.length;i++){
-    let match = product[i].getElementsByTagName('h3')[0];
-    
-    if(match) {
-        let textvalue = match.textContent || match.innerHTML
+  for (var i = 0; i < products.length; i++) {
+      var productName = products[i].getElementsByClassName("p-details")[0].getElementsByTagName("h3")[0].innerText.toLowerCase();
+      var productPrice = parseFloat(products[i].getElementsByClassName("p-details")[0].getElementsByTagName("h3")[1].innerText.replace("RS.", ""));
 
-        if(textvalue.toUpperCase().indexOf(searchbox) > -1){
-            product[i].style.display = " ";
+      var showProduct = true;
 
-        }
-        else{
-            product[i].style.display ="none"
-        }
-    }
+      if (searchInput && !productName.includes(searchInput)) {
+          showProduct = false;
+      }
 
-}
+      if (minPriceInput && productPrice < minPriceInput) {
+          showProduct = false;
+      }
+
+      if (maxPriceInput && productPrice > maxPriceInput) {
+          showProduct = false;
+      }
+
+      products[i].style.display = showProduct ? "block" : "none";
+  }
 }
