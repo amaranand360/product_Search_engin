@@ -5,7 +5,7 @@ This is a simple search engine for products based on their name and price filter
 
 ## 🚀 Demo
 
-You can see a live demo of the search engine : https://daa-mini-project-by-amar.netlify.app/
+You can see a live demo of the search engine : https://daa-mini-project-search-engine.netlify.app/
 
 ## ✨ Features
 
