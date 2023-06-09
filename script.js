@@ -31,7 +31,7 @@ function binarySearch(arr, searchInput) {
       return nameA.localeCompare(nameB);
     });
   
-    binarySearch(sortedProducts, searchInput);
+    var searchIndex = binarySearch(sortedProducts, searchInput);
   
     for (var i = 0; i < products.length; i++) {
       var productName = products[i].getElementsByClassName("p-details")[0].getElementsByTagName("h3")[0].innerText.toLowerCase();
